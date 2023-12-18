@@ -1,10 +1,30 @@
+body{
+    display: block;
+    margin: 0 auto;
+}
+
 #monke {
     width: 450px;
-    transform: translate(10px, 250px);
+
 }
 
 #banon {
     width: 300px;
-    
-    
+    float: right;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: block;
+    float: right;
+    animation-name: banan;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes banan {
+    0%   {left:0px; top:0px;}
+    100% {left:-890px; top:-50px;transform: rotate(1440deg);}
 }
